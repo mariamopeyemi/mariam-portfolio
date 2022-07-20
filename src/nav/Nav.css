@@ -1,0 +1,61 @@
+nav {
+	display: flex;
+	flex-direction: row;
+	
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
+	position: sticky;
+	z-index: 10;
+	top: 0;
+	padding: 1.2em 8%;
+	color: white;
+	background-color: var(--darkAccent);
+	max-height: 4em;
+}
+
+nav span {
+	font-size: 18px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.2s ease;
+	transition-delay: 0.25s;
+	margin: 1em;
+	padding-bottom: 0.3em;
+}
+
+nav span:hover {
+	cursor: pointer;
+	border-bottom: 1px solid white;
+}
+
+nav span:hover i {
+	color: gold;
+}
+
+nav span.activeClass i {
+	color: gold;
+}
+
+nav span.activeClass {
+	border-bottom-color: var(--lightAccent);
+}
+
+.nav_btn{
+    /* margin: 20px 0px 20px 20px; */
+    padding: 10px 40px;
+    outline: none;
+    border: 2px solid #768F6E;
+    color: #768F6E;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.nav_btn:hover{
+    padding: 12px 42px;
+    border: none;
+    background-color: #768F6E;
+    color: white;
+}
+
+.nav_name{
+	width: 50%;
+}
